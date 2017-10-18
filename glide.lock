@@ -1,0 +1,18 @@
+hash: 6dde5d91b716d55f0be2959b91f914310f925b691bd0ff548d414019bf7c5f74
+updated: 2017-10-18T21:06:29.272245728+09:00
+imports:
+- name: github.com/andybalholm/cascadia
+  version: 349dd0209470eabd9514242c688c403c0926d266
+- name: github.com/ant0ine/go-json-rest
+  version: ce4b71cdf7ba29ef443d704bd923f5bbf281ee30
+  subpackages:
+  - rest
+  - rest/trie
+- name: github.com/PuerkitoBio/goquery
+  version: e1271ee34c6a305e38566ecd27ae374944907ee9
+- name: golang.org/x/net
+  version: 1087133bc4af3073e18add999345c6ae75918503
+  subpackages:
+  - html
+  - html/atom
+testImports: []

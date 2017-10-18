@@ -1,0 +1,8 @@
+package: github.com/m1nam1/porn-thumbnail-api
+import:
+- package: github.com/PuerkitoBio/goquery
+  version: ~1.1.0
+- package: github.com/ant0ine/go-json-rest
+  version: ~3.3.2
+  subpackages:
+  - rest
