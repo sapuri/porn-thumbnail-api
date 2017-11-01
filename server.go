@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/ant0ine/go-json-rest/rest"
-	"github.com/m1nam1/porn-thumbnail-api/scraping"
 	"log"
 	"net/http"
+
+	"github.com/ant0ine/go-json-rest/rest"
+	"github.com/m1nam1/porn-thumbnail-api/scraping"
 )
 
 func main() {
@@ -13,6 +14,9 @@ func main() {
 	api.Use(rest.DefaultDevStack...)
 
 	router, err := rest.MakeRouter(
+		rest.Get("/ok", func(w rest.ResponseWriter, r *rest.Request) {
+			w.WriteJson("ok")
+		}),
 		rest.Get("/pornhub", Pornhub),
 	)
 
